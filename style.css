@@ -1,0 +1,125 @@
+
+/* Base styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+body {
+    background-color: #fdfdfd;
+    text-align: center;
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(52, 152, 219, 0.9);
+    padding: 10px;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #85c1e9;
+}
+
+/* Main branding style */
+.branding {
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    color: #fff;
+    padding: 40px 0;
+    background-color: #3498db;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* Sections styling */
+.content, .members, .spotify, .video {
+    background: linear-gradient(to bottom, #fdfdfd, #f1f1f1);
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 24px;
+    color: #3498db;
+    margin-top: 20px;
+}
+
+p {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Image hover effect */
+.members-image img, .image-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.members-image img:hover, .image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Individual members gallery */
+.image-gallery {
+    display: flex;
+    /* Equal space */
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+.image-gallery .member {
+    width: 30%;
+    text-align: center;
+}
+
+/* Footer styling with social links */
+footer {
+    background-color: #2c3e50;
+    padding: 20px 0;
+    color: white;
+}
+
+footer a {
+    color: #3498db;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #85c1e9;
+}
+
+/* Lyrics section specific styles */
+#lyrics-section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+}
+
+#lyrics-section h2 {
+    margin-bottom: 15px;
+}
+
+.lyrics-content p {
+    white-space: pre-line; /* Preserves whitespace and new lines */
+}
